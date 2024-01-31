@@ -1,16 +1,19 @@
-<<<<<<< HEAD
 # Init
 - Create-react-app
 - install tailwind
 
 # Features
-- Browse page
+- Login/Signup page
+    - signin/signup form
+    - redirect to the browse page
+- Browse page (only after authentication)
     - Header
     - Main Movie
         - Trailor in background
         - Title and description
         - Movie suggestions
-            - Movies * n
-=======
-# Netflix-GPT
->>>>>>> e719bbb6f5734f4c4760e24331e2af477dab2c4d
+            - MoviesList * n
+- NetflixGPT
+    - Search bar
+    - Movie suggestions
+    - 
