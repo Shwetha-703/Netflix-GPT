@@ -16,7 +16,19 @@
 - Create redux store with user slice
 - Implement Sign out
 - Update Profile
-- Fetch from TBDB API
+- Bug fix- loggedinuser cannot go back to login, stays on browse
+- Bug fix- not loggedinuser cannot go to browse page, stays on login
+- Cleanup- unsubscirbe to the onauthstatechange listener
+- Regitered for TMDB & create an app and get access token
+- Get data from tmdb  now playing movies list API
+- Custom hook for now playing movies
+- create movieSlice
+- update store with movies data
+- planning video container and videoList container
+- fetch data for trailer video
+- update store with trailer video data
+- Embed the Youtube video and make it autoplay and mute
+- Tailwind css to make the video container look awesome
 
 # Features
 - Login/Signup page

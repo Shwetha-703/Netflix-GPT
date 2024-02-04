@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import { NETFLIX_BG } from "../utils/constants";
+import { NETFLIX_BG, NETFLIX_USER } from "../utils/constants";
 import Header from "./Header";
 import { checkValidData } from "../utils/validate";
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfile } from "firebase/auth";
@@ -31,7 +31,7 @@ const Login = () => {
                 //Signup
                 const user = userCredential.user;
                 updateProfile(user, {
-                    displayName: name.current.value, photoURL: "https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png"
+                    displayName: name.current.value, photoURL: NETFLIX_USER
                   }).then(() => {
                     // Profile updated!
                     const {uid, email, displayName, photoURL} = auth.currentUser;
@@ -52,7 +52,7 @@ const Login = () => {
             signInWithEmailAndPassword(auth, mail.current.value, password.current.value)
             .then((userCredential) => {
                 // Signed in 
-                const user = userCredential.user;
+                //const user = userCredential.user;
               })
               .catch((error) => {
                 const errorCode = error.code;

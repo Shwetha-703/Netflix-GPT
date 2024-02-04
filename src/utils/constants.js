@@ -3,4 +3,16 @@ export const NETFLIX_LOGO = "https://cdn.cookielaw.org/logos/dd6b162f-1a32-456a-
 
 export const NETFLIX_BG = "https://assets.nflxext.com/ffe/siteui/vlv3/4da5d2b1-1b22-498d-90c0-4d86701dffcc/98a1cb1e-5a1d-4b98-a46f-995272b632dd/IN-en-20240129-popsignuptwoweeks-perspective_alpha_website_large.jpg";
 
-export const NETFLIX_USER = "https://occ-0-1492-3662.1.nflxso.net/dnm/api/v6/vN7bi_My87NPKvsBoib006Llxzg/AAAABYUSpU70FFaIddEM1ptM1kAHiSEWp_YOqoHXpF301chWPMqW5JQ_Hvfuxk4U7RRL04u5_L3bZlB1KFGftraWvIGF9ohiMis.png?r=b1f";
+export const NETFLIX_USER = "https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png";
+
+export const API_OPTIONS = {
+    method: 'GET',
+    headers: {
+      accept: 'application/json',
+      Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI5ZjNiNzI1ZTExNTgwMTM5NzJmOGM4NzNmNzk5OWQ5NCIsInN1YiI6IjY1YmY5N2E0MWRiYzg4MDE3YzFmMTBjYiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.cPRXHiyy9mQ_yxghj0BPj_-yVjUpNsr3ovz3mx8PkvA'
+    }
+  };
+
+export const YOUTUBE_LINK = "https://www.youtube.com/embed/wYmtRhKvmVE?si=";
+
+export const YOUTUBE_LINK_AUTOMUTE = "?&autoplay=1&mute=1";
