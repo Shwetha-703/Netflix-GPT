@@ -18,3 +18,10 @@ export const YOUTUBE_LINK = "https://www.youtube.com/embed/";
 export const YOUTUBE_LINK_AUTOMUTE = "?&autoplay=1&mute=1";
 
 export const TMDB_IMG_URL = "https://image.tmdb.org/t/p/w500";
+
+export const SUPPORTED_LANGUAGES = [
+        {code:"en", name:"English"},
+        {code:"hi", name:"Hindi"},
+        {code:"es", name:"Spanish"},
+        {code:"jp", name:"Japanese"}
+    ]

@@ -33,8 +33,11 @@
 - Built movie list
 - Built movie card
 - TMDB image CDN url
-- made the browse page amazing with tailwind
+- Made the browse page amazing with tailwind
 - Custom hook for now playing movies
+- GPT Search page
+- GPT search bar 
+- Multi-language feature in our app ***
 
 # Features
 - Login/Signup page
