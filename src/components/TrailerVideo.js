@@ -6,7 +6,7 @@ import { YOUTUBE_LINK, YOUTUBE_LINK_AUTOMUTE } from '../utils/constants';
 const TrailerVideo = ({movieId}) => {
   const trailerMovie = useSelector((store)=>store.movies.trailerMovie);
   useMainMovie(movieId);
-
+  
   return (
     <div className='w-screen'>
       <iframe className='w-screen aspect-video'

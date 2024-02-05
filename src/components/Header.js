@@ -35,8 +35,8 @@ const Header = () => {
   }, []);
 
   return (
-    <div className='absolute w-screen bg-gradient-to-b from-black z-10 flex justify-between' >
-      <img alt='NETFLIX' className='w-52 m-2' src = {NETFLIX_LOGO}/>
+    <div className='absolute w-screen bg-gradient-to-b from-black   z-10 flex justify-between' >
+      <img alt='NETFLIX' className='w-52 m-2 ' src = {NETFLIX_LOGO}/>
       { user && (<div className='flex p-5'>
         <img alt ="user" src={user?.photoURL} className="p-1 m-3 w-14 h-14"/>
         <button className='text-white' onClick={handleSignOut}>Sign out</button>
