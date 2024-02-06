@@ -6,7 +6,7 @@ const VideoListContainer = () => {
   const movies = useSelector((store)=>store.movies);
   return (
     movies.nowPlayingMovies && (<div className='bg-black'>
-        <div className=' -mt-52 relative z-20'>
+        <div className='-mt-16 md:-mt-52 relative z-20'>
             <MovieList title={"Now Playing movies"} movies={movies.nowPlayingMovies}/>
             <MovieList title={"Upcoming movies"} movies={movies.upComingMovies}/>
             <MovieList title={"Popular movies"} movies={movies.popularMovies}/>

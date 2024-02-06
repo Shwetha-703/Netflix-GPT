@@ -46,20 +46,20 @@ const Header = () => {
   }, []);
 
   return (
-    <div className='absolute w-screen bg-gradient-to-b from-black   z-10 flex justify-between' >
-      <img alt='NETFLIX' className='w-52 m-2 ' src = {NETFLIX_LOGO}/>
+    <div className='absolute w-screen bg-gradient-to-b from-black z-10 flex justify-between' >
+      <img alt='NETFLIX' className='w-36 md:w-52  md:m-2 ' src = {NETFLIX_LOGO}/>
       { user && (<div className='flex p-5'>
         {showGptSearch && (
-            <select className='p-2 m-2 bg-gray-900 text-white' onChange={handleLanguageChange}>
+            <select className='p-1 md:p-2 m-1 md:m-3 bg-gray-900 text-xs md:text-md text-white' onChange={handleLanguageChange}>
                 {SUPPORTED_LANGUAGES.map(o=> <option key={o.code} value={o.code}>{o.name}</option>)}
             </select>
             )
         }
-        <button onClick={toggleGPT} className='bg-purple-700 w-32 h-13 m-2 p-2 rounded-md'>
+        <button onClick={toggleGPT} className='bg-purple-700  md:w-32 h-6 md:h-13 m-2 md:m-5 p-1  rounded-md text-xs md:text-md'>
             {showGptSearch ? "Home" : "GPT Search"}
         </button>
-        <img alt ="user" src={user?.photoURL} className="p-1 m-1 w-14 h-14"/>
-        <button className='text-white' onClick={handleSignOut}>Sign out</button>
+        <img alt ="user" src={user?.photoURL} className="hidden md:blockp-1 m-1 w-14 h-14"/>
+        <button className='text-xs md:text-md text-white' onClick={handleSignOut}>Sign out</button>
       </div>)}
     </div>
   )

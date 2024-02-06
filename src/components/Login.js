@@ -65,16 +65,16 @@ const Login = () => {
     return (
         <div>
             <Header/>
-            <div className="absolute">
-                <img  alt="Netflix_BG" src={NETFLIX_BG}/>
+            <div className="absolute ">
+                <img className="h-screen object-cover md:h-fit" alt="Netflix_BG" src={NETFLIX_BG}/>
             </div>
-            <form onSubmit={(e)=>e.preventDefault()} className="w-4/12 mx-auto p-12 bg-black absolute right-0 left-0 my-28 text-white rounded-md bg-opacity-90">
+            <form onSubmit={(e)=>e.preventDefault()} className="w-sreen md:w-4/12 mx-auto p-12 bg-black absolute right-0 left-0 my-28 text-white rounded-md bg-opacity-90">
                 <h1 className="font-bold text-3xl py-5">{isSignIn ? "Sign In" : "Sign up"}</h1>
                 <input ref={mail} type="text" className="w-full p-4 my-4 border-white bg-gray-900 rounded-md" placeholder="Email or phone number"/>
                 {!isSignIn && <input ref={name} type="text" className="w-full p-4 my-4 border-white bg-gray-900 rounded-md" placeholder="Name"/>}
                 <input ref={password} type="password" className="w-full p-4 my-4  bg-gray-900 rounded-md" placeholder="Password"/>
                 <p className="text-red-700">{errorMessage}</p>
-                <button className="bg-red-700 p-3 my-6 w-full rounded-md" onClick={handleLogin}>
+                <button className="bg-red-700 text-sm md:text-lg p-3 my-6 w-full rounded-md" onClick={handleLogin}>
                     {isSignIn ? "Sign In" : "Sign up"}
                 </button>
                 {isSignIn ? 

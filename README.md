@@ -38,6 +38,9 @@
 - GPT Search page
 - GPT search bar 
 - Multi-language feature in our app ***
+- Hid the secret keys in env file
+- Reduced API calls by memoization
+- Adjust app to mobile devices
 
 # Features
 - Login/Signup page
