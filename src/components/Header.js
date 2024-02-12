@@ -55,9 +55,11 @@ const Header = () => {
             </select>
             )
         }
-        <button onClick={toggleGPT} className='bg-purple-700  md:w-32 h-6 md:h-13 m-2 md:m-5 p-1  rounded-md text-xs md:text-md'>
-            {showGptSearch ? "Home" : "GPT Search"}
-        </button>
+        {
+        //<button onClick={toggleGPT} className='bg-purple-700  md:w-32 h-6 md:h-13 m-2 md:m-5 p-1  rounded-md text-xs md:text-md'>
+        //    {showGptSearch ? "Home" : "GPT Search"}
+        //</button>
+        }
         <img alt ="user" src={user?.photoURL} className="hidden md:blockp-1 m-1 w-14 h-14"/>
         <button className='text-xs md:text-md text-white' onClick={handleSignOut}>Sign out</button>
       </div>)}
